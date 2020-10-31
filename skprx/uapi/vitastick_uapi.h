@@ -9,8 +9,9 @@ extern "C" {
 #define VITASTICK_ERROR_DRIVER_NOT_ACTIVATED		0x91337001
 #define VITASTICK_ERROR_DRIVER_ALREADY_ACTIVATED	0x91337002
 
-int vitastick_start(void);
-int vitastick_stop(void);
+    int vitastick_uploadtouchdata(int8_t ltrig, int8_t rtrig);
+    int vitastick_start(void);
+    int vitastick_stop(void);
 
 #ifdef __cplusplus
 }
